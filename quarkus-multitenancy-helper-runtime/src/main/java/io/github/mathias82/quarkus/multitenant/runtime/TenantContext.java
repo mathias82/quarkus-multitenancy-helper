@@ -1,0 +1,16 @@
+package io.github.mathias82.quarkus.multitenant.runtime;
+
+import java.util.Optional;
+
+/**
+ * Represents the per-request tenant context.
+ */
+public interface TenantContext {
+
+    Optional<String> getTenantId();
+
+    void setTenantId(String tenantId);
+
+    void clear();
+}
+

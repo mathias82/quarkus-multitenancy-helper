@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.github.mathias82.quarkus</groupId>
+        <artifactId>quarkus-multitenancy-helper</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>quarkus-multitenancy-helper-deployment</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.mathias82.quarkus</groupId>
+            <artifactId>quarkus-multitenancy-helper-runtime</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
