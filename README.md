@@ -14,6 +14,25 @@ store it in a request-scoped CDI bean, and access it anywhere in your Quarkus ap
 
 ---
 
+## About This Project
+
+**Quarkus Multi-Tenancy Helper** is an open-source extension designed to simplify tenant resolution
+for Quarkus REST applications.  
+It provides a lightweight, standardized way to identify the current tenant per incoming request using
+strategies such as HTTP headers (default), JWT claims (upcoming), cookies (upcoming), or URL path segments (planned).
+
+The goal of this project is to offer a reusable, production-ready multi-tenancy foundation that can
+be used in both simple and complex microservice architectures.
+
+This extension was created to:
+
+- Provide a consistent multi-tenant mechanism across Quarkus services  
+- Reduce boilerplate code for tenant extraction  
+- Enable developers to plug custom tenant resolvers  
+- Support future integration with datasources, caching layers and identity providers  
+- Move toward Quarkiverse compatibility and Maven Central publishing  
+
+
 ## Features
 
 - ✔ **TenantContext API** to access the current tenant ID from anywhere  
@@ -132,3 +151,4 @@ A full CONTRIBUTING guide will be added soon.
 Planned future steps:
 - Publishing to Maven Central
 - Submitting to Quarkiverse Hub
+
