@@ -23,14 +23,14 @@ Add the dependency to your Quarkus application:
   <version>0.0.1-SNAPSHOT</version>
 </dependency>
 
-Configure it:
+## Configure it:
 
 quarkus.multi-tenant.enabled=true
 quarkus.multi-tenant.strategy=header
 quarkus.multi-tenant.header-name=X-Tenant-Id
 quarkus.multi-tenant.default-tenant=public
 
-Inject the TenantContext:
+## Inject the TenantContext:
 
 import io.github.mathias82.quarkus.multitenant.runtime.TenantContext;
 
@@ -42,7 +42,16 @@ public void someMethod() {
 }
 
 
-Build
-
+## Build
 mvn clean install
+
+## Configuration Reference
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `quarkus.multi-tenant.enabled` | boolean | `false` | Enables multi-tenancy |
+| `quarkus.multi-tenant.strategy` | string | `header` | Strategy used (`header`, later `jwt`, etc.) |
+| `quarkus.multi-tenant.header-name` | string | `X-Tenant-Id` | Header name for resolving tenant |
+| `quarkus.multi-tenant.default-tenant` | string | `public` | Tenant returned when none is provided |
+| `quarkus.multi-tenant.jwt-claim-name` | string | `tenant_id` | Claim name when using JWT strategy |
 
