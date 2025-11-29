@@ -1,8 +1,8 @@
 package io.github.mathias82.quarkus.multitenant.deployment;
 
-import io.github.mathias82.quarkus.multitenant.runtime.DefaultTenantContext;
-import io.github.mathias82.quarkus.multitenant.runtime.HeaderTenantResolver;
-import io.github.mathias82.quarkus.multitenant.runtime.TenantFilter;
+import io.github.mathias82.quarkus.multitenant.runtime.context.DefaultTenantContext;
+import io.github.mathias82.quarkus.multitenant.runtime.resolver.HeaderTenantResolver;
+import io.github.mathias82.quarkus.multitenant.runtime.filter.TenantFilter;
 
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.annotations.ExecutionTime;

@@ -1,7 +1,10 @@
-package io.github.mathias82.quarkus.multitenant.runtime;
+package io.github.mathias82.quarkus.multitenant.runtime.config;
 
+import io.github.mathias82.quarkus.multitenant.runtime.Strategy;
 import io.smallrye.config.ConfigMapping;
 import io.smallrye.config.WithDefault;
+
+import java.util.List;
 
 /**
  * Configuration mapping for multi-tenancy.
@@ -20,8 +23,7 @@ public interface MultiTenantConfig {
     /**
      * Strategy to resolve tenant: "header", later "jwt", "path" etc.
      */
-    @WithDefault("header")
-    String strategy();
+    List<Strategy> strategy();
 
     /**
      * Header name used when strategy=header.

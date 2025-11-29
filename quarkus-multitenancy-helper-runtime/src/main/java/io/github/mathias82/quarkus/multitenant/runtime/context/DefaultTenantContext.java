@@ -1,4 +1,4 @@
-package io.github.mathias82.quarkus.multitenant.runtime;
+package io.github.mathias82.quarkus.multitenant.runtime.context;
 
 import jakarta.enterprise.context.RequestScoped;
 

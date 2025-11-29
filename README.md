@@ -66,7 +66,7 @@ quarkus.multi-tenant.default-tenant=public
 
 ## Inject the TenantContext:
 
-import io.github.mathias82.quarkus.multitenant.runtime.TenantContext;
+import io.github.mathias82.quarkus.multitenant.runtime.context.TenantContext;
 
 @Inject
 TenantContext tenantContext;

@@ -1,5 +1,6 @@
-package io.github.mathias82.quarkus.multitenant.runtime;
+package io.github.mathias82.quarkus.multitenant.runtime.resolver;
 
+import io.github.mathias82.quarkus.multitenant.runtime.config.MultiTenantConfig;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.core.HttpHeaders;

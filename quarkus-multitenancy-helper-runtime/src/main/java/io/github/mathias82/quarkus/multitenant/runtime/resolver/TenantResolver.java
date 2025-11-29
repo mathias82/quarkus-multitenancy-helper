@@ -1,4 +1,4 @@
-package io.github.mathias82.quarkus.multitenant.runtime;
+package io.github.mathias82.quarkus.multitenant.runtime.resolver;
 
 import jakarta.ws.rs.core.HttpHeaders;
 import java.util.Optional;

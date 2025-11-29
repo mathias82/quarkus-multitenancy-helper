@@ -1,5 +1,9 @@
-package io.github.mathias82.quarkus.multitenant.runtime;
+package io.github.mathias82.quarkus.multitenant.runtime.filter;
 
+import io.github.mathias82.quarkus.multitenant.runtime.resolver.PrimaryTenantResolver;
+import io.github.mathias82.quarkus.multitenant.runtime.resolver.TenantResolver;
+import io.github.mathias82.quarkus.multitenant.runtime.config.MultiTenantConfig;
+import io.github.mathias82.quarkus.multitenant.runtime.context.TenantContext;
 import jakarta.annotation.Priority;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
@@ -22,6 +26,7 @@ public class TenantFilter implements ContainerRequestFilter {
     TenantContext tenantContext;
 
     @Inject
+    @PrimaryTenantResolver
     TenantResolver tenantResolver;
 
     @Inject
@@ -32,9 +37,6 @@ public class TenantFilter implements ContainerRequestFilter {
 
     @Override
     public void filter(ContainerRequestContext requestContext) {
-        if (!config.enabled()) {
-            return;
-        }
 
         tenantContext.clear();
 
