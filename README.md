@@ -64,6 +64,10 @@ quarkus.multi-tenant.strategy=header
 quarkus.multi-tenant.header-name=X-Tenant-Id
 quarkus.multi-tenant.default-tenant=public
 
+# JWT claim for tenant
+quarkus.multi-tenant.strategy=jwt
+quarkus.multi-tenant.jwt-claim=tenantId
+
 ## Inject the TenantContext:
 
 import io.github.mathias82.quarkus.multitenant.runtime.context.TenantContext;
@@ -150,6 +154,7 @@ A full CONTRIBUTING guide will be added soon.
 Planned future steps:
 - Publishing to Maven Central
 - Submitting to Quarkiverse Hub
+
 
 
 
