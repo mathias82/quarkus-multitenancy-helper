@@ -50,22 +50,11 @@
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <quarkus.version>3.15.0</quarkus.version>
-        <project.version>0.1.1</project.version>
+        <project.version>0.1.2</project.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>io.github.mathias82</groupId>
-                <artifactId>quarkus-multitenancy-runtime</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.mathias82</groupId>
-                <artifactId>quarkus-multitenancy-deployment</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
             <dependency>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-bom</artifactId>
