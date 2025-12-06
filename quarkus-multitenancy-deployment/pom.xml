@@ -8,14 +8,15 @@
     <parent>
         <groupId>io.github.mathias82</groupId>
         <artifactId>quarkus-multitenancy</artifactId>
-        <version>0.1.0</version>
+        <version>0.1.1</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>quarkus-multitenancy-deployment</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>io.github.mathiasstavrou</groupId>
+            <groupId>io.github.mathias82</groupId>
             <artifactId>quarkus-multitenancy-runtime</artifactId>
             <version>${project.version}</version>
         </dependency>
