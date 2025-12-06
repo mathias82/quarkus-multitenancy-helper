@@ -5,17 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.github.mathias82.quarkus</groupId>
-        <artifactId>quarkus-multitenancy-helper</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>io.github.mathiasstavrou</groupId>
+        <artifactId>quarkus-multitenancy</artifactId>
+        <version>0.1.0</version>
     </parent>
 
-    <artifactId>quarkus-multitenancy-helper-deployment</artifactId>
+    <artifactId>quarkus-multitenancy-deployment</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>io.github.mathias82.quarkus</groupId>
-            <artifactId>quarkus-multitenancy-helper-runtime</artifactId>
+            <groupId>io.github.mathiasstavrou</groupId>
+            <artifactId>quarkus-multitenancy-runtime</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

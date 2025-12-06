@@ -1,4 +1,4 @@
-# Contributing to Quarkus Multi-Tenancy Helper
+# Contributing to Quarkus Multi-Tenancy
 
 Thank you for considering contributing to this project!
 

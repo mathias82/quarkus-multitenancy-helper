@@ -4,17 +4,17 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.mathias82.quarkus</groupId>
-    <artifactId>quarkus-multitenancy-helper</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>io.github.mathiasstavrou</groupId>
+    <artifactId>quarkus-multitenancy</artifactId>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
 
     <name>quarkus-multitenancy-helper</name>
     <description>Quarkus Multi-Tenancy Helper Extension</description>
 
     <modules>
-        <module>quarkus-multitenancy-helper-runtime</module>
-        <module>quarkus-multitenancy-helper-deployment</module>
+        <module>quarkus-multitenancy-runtime</module>
+        <module>quarkus-multitenancy-deployment</module>
     </modules>
 
     <properties>
