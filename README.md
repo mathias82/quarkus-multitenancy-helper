@@ -54,7 +54,7 @@ Next step: *Quarkiverse compatibility* ✔️
   <version>0.1.0</version>
 </dependency>
 
-## Configure it:
+2️⃣ Configure it
 
 Add properties in application.properties:
 
@@ -67,7 +67,7 @@ quarkus.multi-tenant.default-tenant=public
 quarkus.multi-tenant.strategy=jwt
 quarkus.multi-tenant.jwt-claim=tenantId
 
-## Inject the TenantContext:
+3️⃣ Inject the TenantContext
 
 import io.github.mathias82.quarkus.multitenant.runtime.context.TenantContext;
 
@@ -78,9 +78,9 @@ public void someMethod() {
     String tenant = tenantContext.getTenantId().orElse("unknown");
 }
 
-## Example REST Endpoint
+4️⃣ Example REST Endpoint
 
-@Path("/tenant")
+`@Path("/tenant")
 public class TenantResource {
 
     @Inject
@@ -90,19 +90,19 @@ public class TenantResource {
     public String getTenant() {
         return tenantContext.getTenantId().orElse("NO TENANT FOUND");
     }
-}
+}`
 
 ## Build
 mvn clean install
 
-## Test It
+🧪 Test It
 curl http://localhost:8080/tenant
 # → public
 
 curl -H "X-Tenant-Id: acme" http://localhost:8080/tenant
 # → acme
 
-## Configuration Reference
+⚙️ Configuration Reference
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
@@ -112,7 +112,7 @@ curl -H "X-Tenant-Id: acme" http://localhost:8080/tenant
 | `quarkus.multi-tenant.default-tenant` | string | `public` | Tenant returned when none is provided |
 | `quarkus.multi-tenant.jwt-claim-name` | string | `tenant_id` | Claim name when using JWT strategy |
 
-## Architecture Overview
+🧱 Architecture Overview
 
 ┌──────────────────────────────┐
 │        Incoming Request       │
@@ -153,5 +153,6 @@ A full CONTRIBUTING guide will be added soon.
 Planned future steps:
 - Publishing to Maven Central
 - Submitting to Quarkiverse Hub
+
 
 
