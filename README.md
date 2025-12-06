@@ -9,7 +9,7 @@
 ![Quarkus](https://img.shields.io/badge/Quarkus-3.x-red)
 
 
-Quarkus Multi-Tenancy (Tenant Resolver)
+## Quarkus Multi-Tenancy (Tenant Resolver)
 
 A Quarkus extension that resolves the current tenant for each HTTP request 
 using pluggable strategies (header, JWT, cookie, path) and exposes it via 
@@ -159,6 +159,7 @@ Planned future steps:
 ⭐ Support the Project
 
 If you find this useful, give the repo a star, it motivates continued development ❤️
+
 
 
 
